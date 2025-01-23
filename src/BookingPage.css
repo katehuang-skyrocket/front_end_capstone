@@ -1,0 +1,77 @@
+.booking_poster {
+    width: 100%;
+    max-height: 400px;
+    margin-bottom: 20px;
+}
+
+.form_container {
+    display: grid;
+    grid-template-areas: "form_date" "form_time" "form_guests" "form_occasion" "form_button";
+    row-gap: 30px;
+    max-width: 1000px;
+    justify-content: flex-start;
+}
+
+.form_container label {
+    color: #495e57;
+    font-family: "Markazi text";
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.date {
+    grid-area: form_date;
+    color: aqua;
+}
+
+.time {
+    grid-area: form_time;
+}
+
+.guests {
+    grid-area: form_guests;
+}
+
+.occasion {
+    grid-area: form_occasion;
+}
+
+.submit {
+    grid-area: form_button;
+    color: black;
+    font-family: "Markazi text";
+    font-size: 20px;
+    height: 2.5rem;
+    background-color: #f4ce14;
+    border: none;
+    border-radius: 10px;
+}
+
+.submit:hover {
+    cursor: pointer;;
+}
+
+.submit:focus {
+    outline: 2px solid black;
+}
+
+.submit:disabled {
+    background-color: grey;
+    color: white;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.booking_container h2 {
+    margin-left: 15%;
+    color: #495e57;
+    margin-bottom: 50px;
+}
+
+.confirmed_booking {
+    background-color: #495e57;
+    color: white;
+    min-height: 200px;
+    padding: 50px;
+}
